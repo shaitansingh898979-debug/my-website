@@ -1,0 +1,885 @@
+/* =========================================
+   CAREER PLANNER - GLOBAL STYLE
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    color: #172033;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8fbff 0%,
+            #f5f2ff 100%
+        );
+
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+
+.navbar {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 22px 7%;
+
+    background: rgba(255, 255, 255, 0.72);
+
+    backdrop-filter: blur(18px);
+
+    border-bottom:
+        1px solid rgba(120, 130, 160, 0.12);
+
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.6px;
+}
+
+.logo span {
+    color: #5965e8;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 34px;
+}
+
+.navbar nav a {
+    color: #687086;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.25s ease;
+}
+
+.navbar nav a:hover {
+    color: #5965e8;
+}
+
+.nav-button {
+    padding: 11px 19px;
+
+    border-radius: 12px;
+
+    background: #5965e8;
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    box-shadow:
+        0 8px 22px rgba(89, 101, 232, 0.24);
+
+    transition: 0.25s ease;
+}
+
+.nav-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 28px rgba(89, 101, 232, 0.32);
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+    max-width: 1250px;
+
+    margin: auto;
+
+    min-height: 650px;
+
+    padding:
+        90px 6% 80px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 0.85fr;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-badge {
+    display: inline-block;
+
+    padding: 9px 15px;
+
+    margin-bottom: 22px;
+
+    border-radius: 50px;
+
+    background: #eeedff;
+
+    color: #5965e8;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 6vw, 78px);
+
+    line-height: 0.98;
+
+    letter-spacing: -4px;
+
+    color: #172033;
+}
+
+.hero h1 span {
+    background:
+        linear-gradient(
+            90deg,
+            #5965e8,
+            #8b5cf6
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+.hero-content > p {
+    max-width: 570px;
+
+    margin-top: 28px;
+
+    color: #697287;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   HERO BUTTONS
+   ========================================= */
+
+.hero-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 34px;
+}
+
+.primary-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px 23px;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5965e8,
+            #7657e8
+        );
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 12px 28px
+        rgba(89, 101, 232, 0.25);
+
+    transition: 0.25s ease;
+}
+
+.primary-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 17px 34px
+        rgba(89, 101, 232, 0.32);
+}
+
+.secondary-button {
+    padding: 15px 22px;
+
+    border-radius: 14px;
+
+    color: #566078;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    transition: 0.25s ease;
+}
+
+.secondary-button:hover {
+    color: #5965e8;
+}
+
+
+/* =========================================
+   HERO VISUAL
+   ========================================= */
+
+.hero-visual {
+    position: relative;
+
+    min-height: 440px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.glow {
+    position: absolute;
+
+    border-radius: 50%;
+
+    filter: blur(3px);
+}
+
+.glow-one {
+    width: 260px;
+    height: 260px;
+
+    background: #dfe4ff;
+
+    top: 30px;
+    right: 40px;
+}
+
+.glow-two {
+    width: 190px;
+    height: 190px;
+
+    background: #eadfff;
+
+    bottom: 20px;
+    left: 30px;
+}
+
+.career-card {
+    width: 330px;
+
+    padding: 28px;
+
+    position: relative;
+
+    background:
+        rgba(255, 255, 255, 0.86);
+
+    backdrop-filter: blur(20px);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.8);
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 30px 70px
+        rgba(69, 76, 120, 0.16);
+
+    transform:
+        rotate(2deg);
+
+    animation:
+        floatingCard 4s ease-in-out infinite;
+}
+
+@keyframes floatingCard {
+
+    0%,
+    100% {
+        transform:
+            rotate(2deg)
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            rotate(2deg)
+            translateY(-10px);
+    }
+}
+
+.card-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    color: #7b8397;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.card-dot {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #5ee0a0;
+}
+
+.profile-icon {
+    width: 70px;
+    height: 70px;
+
+    margin-top: 35px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e5e8ff,
+            #f0e7ff
+        );
+
+    font-size: 32px;
+}
+
+.career-card h3 {
+    margin-top: 23px;
+
+    font-size: 26px;
+
+    letter-spacing: -1px;
+}
+
+.career-card p {
+    margin-top: 8px;
+
+    color: #7b8397;
+
+    font-size: 14px;
+}
+
+.mini-progress {
+    height: 9px;
+
+    margin-top: 25px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: #eceef5;
+}
+
+.mini-progress-fill {
+    width: 76%;
+
+    height: 100%;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #5965e8,
+            #9b6cf5
+        );
+}
+
+.career-tags {
+    display: flex;
+
+    gap: 7px;
+
+    margin-top: 20px;
+}
+
+.career-tags span {
+    padding: 7px 10px;
+
+    border-radius: 8px;
+
+    background: #f2f3f8;
+
+    color: #687086;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   STATS
+   ========================================= */
+
+.stats-section {
+    max-width: 1050px;
+
+    margin: 0 auto 80px;
+
+    padding: 28px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    background: white;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 18px 50px
+        rgba(50, 60, 100, 0.07);
+}
+
+.stat {
+    text-align: center;
+
+    padding: 10px;
+
+    border-right:
+        1px solid #eceef4;
+}
+
+.stat:last-child {
+    border-right: none;
+}
+
+.stat strong {
+    display: block;
+
+    color: #5965e8;
+
+    font-size: 28px;
+}
+
+.stat span {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #7b8397;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   HOW IT WORKS
+   ========================================= */
+
+.how-section {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 90px 6%;
+}
+
+.section-heading {
+    max-width: 650px;
+
+    margin-bottom: 50px;
+}
+
+.section-label {
+    color: #5965e8;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    margin-top: 12px;
+
+    font-size: 43px;
+
+    letter-spacing: -2px;
+}
+
+.section-heading h2 span,
+.final-cta h2 span {
+    color: #5965e8;
+}
+
+.section-heading p {
+    margin-top: 15px;
+
+    color: #788196;
+
+    line-height: 1.7;
+}
+
+.steps {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.step-card {
+    position: relative;
+
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.8);
+
+    border:
+        1px solid #eaebf2;
+
+    border-radius: 22px;
+
+    transition: 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 20px 45px
+        rgba(60, 70, 120, 0.10);
+}
+
+.step-number {
+    position: absolute;
+
+    top: 22px;
+    right: 25px;
+
+    color: #d9dcef;
+
+    font-size: 14px;
+
+    font-weight: 800;
+}
+
+.step-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background: #eeedff;
+
+    font-size: 25px;
+}
+
+.step-card h3 {
+    margin-top: 23px;
+
+    font-size: 20px;
+}
+
+.step-card p {
+    margin-top: 10px;
+
+    color: #788196;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   FINAL CTA
+   ========================================= */
+
+.final-cta {
+    max-width: 1100px;
+
+    margin: 50px auto 100px;
+
+    padding: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #20284d,
+            #343b70
+        );
+
+    color: white;
+
+    box-shadow:
+        0 25px 60px
+        rgba(35, 42, 80, 0.22);
+}
+
+.final-cta .section-label {
+    color: #aeb7ff;
+}
+
+.final-cta h2 {
+    margin-top: 10px;
+
+    max-width: 580px;
+
+    font-size: 40px;
+
+    letter-spacing: -1.5px;
+}
+
+.final-cta p {
+    margin-top: 10px;
+
+    color: #c6cae0;
+}
+
+.final-cta .primary-button {
+    flex-shrink: 0;
+
+    background: white;
+
+    color: #4f5ddd;
+
+    box-shadow: none;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    padding: 35px 7%;
+
+    background: #171c35;
+
+    color: #aeb4cb;
+
+    text-align: center;
+}
+
+.footer-logo {
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: 800;
+}
+
+.footer-logo span {
+    color: #8e98ff;
+}
+
+footer p {
+    margin-top: 8px;
+
+    font-size: 13px;
+}
+
+.footer-copy {
+    margin-top: 20px;
+
+    color: #737b99;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 850px) {
+
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .navbar nav {
+        display: none;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        padding-top: 65px;
+    }
+
+    .hero-content {
+        margin: auto;
+    }
+
+    .hero-content > p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        min-height: 380px;
+    }
+
+    .stats-section {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .final-cta {
+        margin-left: 5%;
+        margin-right: 5%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .nav-button {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+
+        letter-spacing: -2.5px;
+    }
+
+    .hero-content > p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .primary-button,
+    .secondary-button {
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    .career-card {
+        width: 290px;
+    }
+
+    .stats-section {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .stat {
+        border-right: none;
+
+        border-bottom:
+            1px solid #eceef4;
+
+        padding-bottom: 18px;
+    }
+
+    .stat:last-child {
+        border-bottom: none;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .final-cta {
+        padding: 35px 25px;
+    }
+
+    .final-cta h2 {
+        font-size: 32px;
+    }
+}

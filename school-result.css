@@ -1,0 +1,713 @@
+/* ========================================
+   CAREER PLANNER
+   CLASS 9-10 RESULT
+======================================== */
+
+.result-page {
+    max-width: 1080px;
+
+    margin: 0 auto;
+
+    padding: 75px 24px 100px;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.result-hero {
+    max-width: 780px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.hero-badge {
+    display: inline-block;
+
+    padding: 8px 15px;
+
+    border-radius: 30px;
+
+    background: #f0f1ff;
+
+    color: #5961c9;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 20px;
+}
+
+.result-hero h1 {
+    margin: 0;
+
+    font-size: clamp(38px, 6vw, 60px);
+
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+
+    color: #171923;
+}
+
+.result-hero h1 span {
+    display: block;
+
+    background:
+        linear-gradient(
+            90deg,
+            #667eea,
+            #764ba2
+        );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+.result-hero p {
+    max-width: 680px;
+
+    margin: 22px auto 0;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #74798b;
+}
+
+
+/* ========================================
+   MAIN MATCH
+======================================== */
+
+.main-match-card {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 42px;
+
+    margin-bottom: 70px;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef1ff,
+            #f7efff
+        );
+
+    border: 1px solid #e1e4f5;
+
+    box-shadow:
+        0 25px 70px rgba(67, 73, 130, 0.12);
+}
+
+.main-match-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 230px;
+    height: 230px;
+
+    right: -80px;
+    top: -100px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.55);
+}
+
+.match-left {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+.match-icon {
+    width: 88px;
+    height: 88px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 25px;
+
+    background: white;
+
+    font-size: 42px;
+
+    box-shadow:
+        0 12px 30px rgba(60,65,110,0.12);
+}
+
+.small-label {
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.6px;
+
+    color: #7a7f91;
+}
+
+.match-left h2 {
+    margin: 8px 0;
+
+    font-size: 32px;
+
+    color: #171923;
+}
+
+.match-left p {
+    max-width: 600px;
+
+    margin: 0;
+
+    line-height: 1.7;
+
+    color: #656a7b;
+}
+
+.match-score {
+    position: relative;
+
+    z-index: 1;
+
+    min-width: 100px;
+
+    text-align: center;
+}
+
+.score-number {
+    font-size: 45px;
+
+    font-weight: 800;
+
+    line-height: 1;
+
+    color: #5961c9;
+}
+
+.score-label {
+    margin-top: 6px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: #7c8190;
+}
+
+
+/* ========================================
+   SECTIONS
+======================================== */
+
+.profile-section {
+    margin-bottom: 70px;
+}
+
+.section-title {
+    display: flex;
+
+    gap: 18px;
+
+    align-items: flex-start;
+
+    margin-bottom: 28px;
+}
+
+.section-number {
+    font-size: 12px;
+
+    font-weight: 800;
+
+    color: #9a9eae;
+
+    padding-top: 5px;
+}
+
+.section-title h2 {
+    margin: 0 0 5px;
+
+    font-size: 27px;
+
+    color: #171923;
+}
+
+.section-title p {
+    margin: 0;
+
+    color: #7b8090;
+
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   PERSONALITY
+======================================== */
+
+.personality-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.personality-card {
+    padding: 28px;
+
+    background: white;
+
+    border: 1px solid #e8e9ef;
+
+    border-radius: 22px;
+
+    transition: 0.25s ease;
+}
+
+.personality-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 18px 40px rgba(40,45,75,0.08);
+}
+
+.personality-icon {
+    font-size: 30px;
+
+    margin-bottom: 18px;
+}
+
+.personality-card h3 {
+    margin: 0 0 8px;
+
+    font-size: 18px;
+
+    color: #222532;
+}
+
+.personality-card p {
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: #777c8d;
+}
+
+
+/* ========================================
+   DIRECTIONS
+======================================== */
+
+.direction-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.direction-card {
+    display: grid;
+
+    grid-template-columns:
+        55px 1fr 100px;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 22px 25px;
+
+    border: 1px solid #e8e9ef;
+
+    border-radius: 19px;
+
+    background: white;
+
+    transition: 0.25s ease;
+}
+
+.direction-card:hover {
+    transform: translateX(5px);
+
+    box-shadow:
+        0 12px 30px rgba(40,45,75,0.07);
+}
+
+.direction-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: #f3f4ff;
+
+    font-size: 24px;
+}
+
+.direction-info h3 {
+    margin: 0 0 5px;
+
+    font-size: 18px;
+}
+
+.direction-info p {
+    margin: 0;
+
+    font-size: 13px;
+
+    color: #7c8190;
+}
+
+.direction-score {
+    text-align: right;
+
+    font-weight: 800;
+
+    color: #5961c9;
+}
+
+.score-bar {
+    width: 100%;
+
+    height: 6px;
+
+    margin-top: 7px;
+
+    border-radius: 20px;
+
+    background: #ececf3;
+
+    overflow: hidden;
+}
+
+.score-bar-fill {
+    height: 100%;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #667eea,
+            #764ba2
+        );
+}
+
+
+/* ========================================
+   STREAM CARD
+======================================== */
+
+.stream-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 35px;
+
+    margin-bottom: 60px;
+
+    border-radius: 25px;
+
+    background: #171923;
+
+    color: white;
+
+    box-shadow:
+        0 22px 50px rgba(20,22,35,0.18);
+}
+
+.stream-icon {
+    width: 65px;
+    height: 65px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: rgba(255,255,255,0.1);
+
+    font-size: 30px;
+}
+
+.stream-card .small-label {
+    color: #aeb1bd;
+}
+
+.stream-card h2 {
+    margin: 8px 0;
+
+    font-size: 25px;
+}
+
+.stream-card p {
+    margin: 0;
+
+    line-height: 1.7;
+
+    color: #b9bcc8;
+}
+
+
+/* ========================================
+   NEXT STEP
+======================================== */
+
+.next-step {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 38px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f6f3ff,
+            #f1f5ff
+        );
+
+    border: 1px solid #e5e6f2;
+
+    margin-bottom: 25px;
+}
+
+.next-step-content {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.next-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 17px;
+
+    background: white;
+
+    font-size: 27px;
+
+    box-shadow:
+        0 8px 20px rgba(50,55,100,0.08);
+}
+
+.next-step h2 {
+    margin: 7px 0;
+
+    font-size: 24px;
+
+    color: #202330;
+}
+
+.next-step p {
+    margin: 0;
+
+    max-width: 580px;
+
+    color: #727788;
+
+    line-height: 1.6;
+}
+
+#exploreButton {
+    flex-shrink: 0;
+
+    border: none;
+
+    padding: 15px 24px;
+
+    border-radius: 13px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #667eea,
+            #764ba2
+        );
+
+    color: white;
+
+    font-weight: 700;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+#exploreButton span {
+    margin-left: 8px;
+
+    font-size: 18px;
+}
+
+#exploreButton:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 25px rgba(102,126,234,0.25);
+}
+
+
+/* ========================================
+   NOTE
+======================================== */
+
+.result-note {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 35px auto 0;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    color: #898d9c;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 750px) {
+
+    .result-page {
+        padding:
+            45px 17px 70px;
+    }
+
+    .result-hero {
+        margin-bottom: 40px;
+    }
+
+    .result-hero h1 {
+        font-size: 38px;
+
+        letter-spacing: -1px;
+    }
+
+    .main-match-card {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 32px 22px;
+    }
+
+    .match-left {
+        flex-direction: column;
+    }
+
+    .match-score {
+        margin-top: 5px;
+    }
+
+    .personality-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .direction-card {
+        grid-template-columns:
+            50px 1fr;
+    }
+
+    .direction-score {
+        grid-column: 2;
+
+        text-align: left;
+    }
+
+    .stream-card {
+        align-items: flex-start;
+
+        padding: 28px 22px;
+    }
+
+    .next-step {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 28px 22px;
+    }
+
+    .next-step-content {
+        align-items: flex-start;
+    }
+
+    #exploreButton {
+        width: 100%;
+    }
+
+}
