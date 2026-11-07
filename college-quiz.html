@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Career Planner - College Quiz</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/college-quiz.css">
+
+</head>
+
+
+<body>
+
+<nav>
+
+    <div class="logo">
+        Career Planner
+    </div>
+
+    <ul class="nav-links">
+
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+
+        <li>
+            <a href="#">Explore Careers</a>
+        </li>
+
+        <li>
+            <a href="#">About</a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+<main class="college-quiz-page">
+
+
+    <!-- ============================= -->
+    <!-- HEADER -->
+    <!-- ============================= -->
+
+    <section class="quiz-header">
+
+        <div class="quiz-label">
+            COLLEGE CAREER DISCOVERY
+        </div>
+
+        <h1>
+            Turn your
+            <span>education into direction.</span>
+        </h1>
+
+        <p>
+            You already have an academic background.
+            Now let's discover how your strengths,
+            interests and goals can shape your career.
+        </p>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- PROGRESS -->
+    <!-- ============================= -->
+
+    <section class="progress-section">
+
+        <div class="progress-top">
+
+            <span id="questionNumber">
+                Question 1 of 6
+            </span>
+
+            <span id="progressPercentage">
+                17%
+            </span>
+
+        </div>
+
+        <div class="progress-bar">
+
+            <div
+                id="progressFill"
+                class="progress-fill">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- QUESTION -->
+    <!-- ============================= -->
+
+    <section class="question-card">
+
+        <div class="question-number">
+
+            <span id="questionNumberSmall">
+                01
+            </span>
+
+        </div>
+
+
+        <h2 id="questionText">
+            Loading question...
+        </h2>
+
+
+        <p class="question-hint">
+            Select the option that best describes you.
+        </p>
+
+
+        <div
+            id="answerContainer"
+            class="answer-container">
+        </div>
+
+
+        <div class="quiz-footer">
+
+            <p>
+                There are no right or wrong answers.
+            </p>
+
+            <button
+                id="nextButton"
+                type="button"
+                disabled>
+
+                Next
+
+                <span>→</span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- IMPORTANT:
+     Only the College quiz files are loaded here.
+     Do NOT load quiz.js, collegeRules.js,
+     collegeScoring.js, or any old result JS.
+-->
+
+<script src="js/college-questions.js"></script>
+
+<script src="js/college-quiz.js"></script>
+
+
+</body>
+
+</html>

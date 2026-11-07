@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Career Planner - Explore Careers</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/career-explorer.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================
+     NAVIGATION
+====================================== -->
+
+<nav>
+
+    <div class="logo">
+        Career Planner
+    </div>
+
+    <ul class="nav-links">
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="career-explorer.html">
+                Explore Careers
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                About
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+<main class="career-explorer-page">
+
+
+    <!-- =====================================
+         HERO
+    ====================================== -->
+
+    <section class="explorer-hero">
+
+        <div class="explorer-badge">
+            CAREER DISCOVERY
+        </div>
+
+        <h1>
+            Explore careers
+            <span>that could fit you.</span>
+        </h1>
+
+        <p>
+            Browse different career directions,
+            discover professional roles and find
+            opportunities that match your interests.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================
+         SEARCH
+    ====================================== -->
+
+    <section class="career-search-section">
+
+        <div class="search-box">
+
+            <span class="search-icon">
+                ⌕
+            </span>
+
+            <input
+                type="text"
+                id="careerSearch"
+                placeholder="Search careers..."
+                autocomplete="off">
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         CATEGORY FILTERS
+    ====================================== -->
+
+    <section class="category-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                EXPLORE BY DIRECTION
+            </p>
+
+            <h2>
+                Find your area
+                <span>of interest.</span>
+            </h2>
+
+        </div>
+
+
+        <div
+            id="categoryContainer"
+            class="category-container">
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         RESULTS HEADER
+    ====================================== -->
+
+    <section class="career-results-header">
+
+        <div>
+
+            <p class="section-label">
+                CAREER LIBRARY
+            </p>
+
+            <h2 id="resultsTitle">
+                All Careers
+            </h2>
+
+        </div>
+
+
+        <p id="careerCount">
+            0 careers
+        </p>
+
+    </section>
+
+
+    <!-- =====================================
+         CAREER GRID
+    ====================================== -->
+
+    <section
+        id="careerGrid"
+        class="career-grid">
+    </section>
+
+
+    <!-- =====================================
+         NO RESULTS
+    ====================================== -->
+
+    <section
+        id="noResults"
+        class="no-results"
+        style="display: none;">
+
+        <div class="no-results-icon">
+            ⌕
+        </div>
+
+        <h2>
+            No careers found
+        </h2>
+
+        <p>
+            Try a different search or choose
+            another career category.
+        </p>
+
+    </section>
+
+
+</main>
+
+
+<!-- =====================================
+     JAVASCRIPT
+====================================== -->
+
+<script src="js/career-data.js"></script>
+
+<script src="js/career-explorer.js"></script>
+
+
+</body>
+
+</html>
